@@ -390,7 +390,7 @@ function ProductCard({ product, isListView, onAddToCart, onToggleWishlist, wishl
       aria-label={product.title}
     >
       <div className="card-image-wrap">
-        <img src={product.image} alt={`${product.title} – product image`} loading="lazy" />
+        <img src={product.image} alt={product.title} loading="lazy" />
         {isSale
           ? <span className="card-badge sale">30% Off</span>
           : (product.rating?.rate || 0) >= 4.5 && <span className="card-badge">Top Pick</span>
