@@ -1,7 +1,6 @@
 [build]
-  base = "appscrip-task"
   command = "npm run build"
-  publish = "appscrip-task/build"
+  publish = "build"
 
 [[redirects]]
   from = "/*"
